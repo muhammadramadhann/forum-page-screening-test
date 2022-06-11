@@ -25,7 +25,7 @@ function Register() {
     }
 
     const validation = (register) => {
-        const errors = {}
+        const errors = {};
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
         if (!register.name) {
@@ -33,12 +33,11 @@ function Register() {
         }
         if (!register.email) {
             errors.email = "Wajib diisi"
+        } else if (!regexEmail.test(register.email)) {
+            errors.email = "Format email salah"
         }
         if (!register.password) {
             errors.password = "Wajib diisi"
-        }
-        if (!regexEmail.test(register.email)) {
-            errors.email = "Format email salah"
         }
         return errors;
     }
@@ -54,7 +53,7 @@ function Register() {
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" value={registerValues.email} onChange={handleChange} />
+                    <input type="text" id="email" name="email" value={registerValues.email} onChange={handleChange} />
                     <p className="error">{registerErrors.email}</p>
                 </div>
                 <div className="form-group">

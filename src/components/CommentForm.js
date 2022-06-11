@@ -31,12 +31,15 @@ function CommentForm() {
     }
 
     const validation = (comments) => {
-        const errors = {}
+        const errors = {};
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if (!comments.name) {
             errors.name = "Wajib diisi"
         }
         if (!comments.email) {
             errors.email = "Wajib diisi"
+        } else if (!regexEmail.test(comments.email)) {
+            errors.email = "Format email salah"
         }
         if (!comments.comment) {
             errors.comment = "Wajib diisi"
@@ -60,7 +63,7 @@ function CommentForm() {
             <form onSubmit={handleSubmit}>
                 <input type="text" id="name" name="name" placeholder="Nama" value={commentValues.name} onChange={handleChange} />
                 <p className="error">{commentErrors.name}</p>
-                <input type="email" id="email" name="email" placeholder="Email" value={commentValues.email} onChange={handleChange} />
+                <input type="text" id="email" name="email" placeholder="Email" value={commentValues.email} onChange={handleChange} />
                 <p className="error">{commentErrors.email}</p>
                 <textarea name="comment" id="comment" cols="60" rows="5" placeholder="Komentar anda" value={commentValues.comment} onChange={handleChange}></textarea>
                 <p className="error">{commentErrors.comment}</p>

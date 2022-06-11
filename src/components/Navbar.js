@@ -8,9 +8,8 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [category] = useState(categories);
 
-    const handleClick = () => {
-        setClick(!click);
-    }
+    const handleClick = () => setClick(!click);
+    const closeMenu = () => setClick(false);
 
     return (
         <header>
@@ -30,10 +29,10 @@ function Navbar() {
                             <Dropdown categories={category} />
                         </li>
                         <li className="nav-item">
-                            <Link to="/login" className="nav-link">Login</Link>
+                            <Link to="/login" className="nav-link" onClick={closeMenu}>Login</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/register" className="nav-link">Register</Link>
+                            <Link to="/register" className="nav-link" onClick={closeMenu}>Register</Link>
                         </li>
                     </ul>
                 </div>

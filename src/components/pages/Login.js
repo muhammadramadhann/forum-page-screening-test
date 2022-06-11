@@ -25,16 +25,15 @@ function Login() {
     }
 
     const validation = (login) => {
-        const errors = {}
+        const errors = {};
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         if (!login.email) {
             errors.email = "Wajib diisi"
+        } else if (!regexEmail.test(login.email)) {
+            errors.email = "Format email salah"
         }
         if (!login.password) {
             errors.password = "Wajib diisi"
-        }
-        if (!regexEmail.test(login.email)) {
-            errors.email = "Format email salah"
         }
         return errors;
     }
