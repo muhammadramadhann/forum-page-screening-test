@@ -16,7 +16,7 @@
     position: relative;
     top: -14px;
     left: 120px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .add-comment hr {
@@ -28,6 +28,12 @@
     align-items: flex-start;
     padding-right: 64px;
     margin-bottom: 48px;
+}
+
+.comment-replies {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 64px;
 }
 
 .comment-item img {
@@ -46,11 +52,10 @@ p.comment-date {
 
 p.comment-message {
     line-height: 1.5;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .comment-point {
-    margin-top: 16px;
     display: flex;
     align-items: center;
 }
@@ -71,7 +76,7 @@ p.comment-message {
     border: 1px solid var(--gray);
     border-radius: 4px;
     padding: 8px;
-    width: 32%;
+    width: 24%;
     margin-bottom: 8px;
 }
 
@@ -117,6 +122,16 @@ p.comment-message {
     background-color: var(--dark-brown);
 }
 
+.comment-replies {
+    margin-top: 32px;
+}
+
+p.error {
+    color: var(--red);
+    margin-bottom: 12px;
+    font-size: 80%;
+}
+
 @media screen and (max-width: 1024px) {
     .forum-comment hr {
         width: 70%;
@@ -130,7 +145,8 @@ p.comment-message {
         width: 52%;
     }
 
-    .comment-item {
+    .comment-item,
+    .comment-replies {
         padding-right: 0;
     }
 }

@@ -17,10 +17,26 @@ function CommentList({ comments }) {
                             <p className="comment-message">{item.message}</p>
                             <div className="comment-point">
                                 <span>{item.point} point</span>
-                                <span>{item.replies['author']}</span>
                                 <button><i className="fa-solid fa-arrow-up"></i></button>
-                                <button><i className="fa-solid fa-arrow-down"></i>  </button>
+                                <button><i className="fa-solid fa-arrow-down"></i></button>
                             </div>
+                            {
+                                item.replies.map(reply => (
+                                    <div key={reply.id} className="comment-replies">
+                                        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar" width="60" />
+                                        <div className="reply-content">
+                                            <p className="comment-author">{reply.author}</p>
+                                            <p className="comment-date">{Moment(reply.date).format('DD MMMM YYYY h:mm')}</p>
+                                            <p className="comment-message">{reply.message}</p>
+                                            <div className="comment-point">
+                                                <span>{reply.point} point</span>
+                                                <button><i className="fa-solid fa-arrow-up"></i></button>
+                                                <button><i className="fa-solid fa-arrow-down"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 ))

@@ -64,6 +64,10 @@ aside h3 {
     color: inherit;
 }
 
+.discuss-link:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1024px) {
     main {
         flex-direction: column;
