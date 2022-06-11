@@ -1,0 +1,143 @@
+:root {
+    --brown: #71695f;
+    --dark-brown: #635c53;
+    --green: #33b95a;
+    --red: #ff5f2d;
+    --gray: #dddddd;
+    --gray-light: #eeeeee;
+    --black: #333333;
+}
+
+.forum-comment hr,
+.add-comment hr {
+    z-index: -1;
+    border: 0.5px solid var(--gray);
+    background-color: var(--gray);
+    position: relative;
+    top: -14px;
+    left: 120px;
+    margin-bottom: 16px;
+}
+
+.add-comment hr {
+    left: 200px;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 64px;
+    margin-bottom: 48px;
+}
+
+.comment-item img {
+    margin-right: 16px;
+}
+
+p.comment-author {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+p.comment-date {
+    font-size: 80%;
+    margin-bottom: 8px;
+}
+
+p.comment-message {
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.comment-point {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.comment-point button {
+    border: none;
+    cursor: pointer;
+    padding: 4px 12px;
+    margin-left: 8px;
+    background-color: var(--gray-light);
+}
+
+.comment-point button:hover {
+    background-color: var(--gray);
+}
+
+.add-comment input {
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    padding: 8px;
+    width: 32%;
+    margin-bottom: 8px;
+}
+
+.add-comment input:focus,
+.add-comment textarea:focus {
+    outline: none;
+}
+
+.add-comment textarea {
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    padding: 8px;
+    width: 50%;
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+.btn-reset,
+.btn-submit {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 18px;
+}
+
+.btn-reset {
+    background-color: var(--gray-light);
+}
+
+.btn-submit {
+    background-color: var(--brown);
+    color: var(--gray-light);
+    margin-left: 4px;
+}
+
+.btn-reset:hover {
+    background-color: var(--gray);
+}
+
+.btn-submit:hover {
+    background-color: var(--dark-brown);
+}
+
+@media screen and (max-width: 1024px) {
+    .forum-comment hr {
+        width: 70%;
+    }
+
+    .add-comment {
+        margin-bottom: 24px;
+    }
+
+    .add-comment hr {
+        width: 52%;
+    }
+
+    .comment-item {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .add-comment input,
+    .add-comment textarea {
+        width: 100%;
+    }
+}

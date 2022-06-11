@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Linux",
+        "path": "",
+        "class": "dropdown-link"
+    },
+    {
+        "id": 2,
+        "name": "Windows",
+        "path": "",
+        "class": "dropdown-link"
+    },
+    {
+        "id": 3,
+        "name": "MAC OS",
+        "path": "",
+        "class": "dropdown-link"
+    },
+    {
+        "id": 4,
+        "name": "Android",
+        "path": "",
+        "class": "dropdown-link"
+    },
+    {
+        "id": 5,
+        "name": "iOS",
+        "path": "",
+        "class": "dropdown-link"
+    }
+]
