@@ -1,0 +1,61 @@
+:root {
+    --brown: #71695f;
+    --dark-brown: #635c53;
+    --green: #33b95a;
+    --red: #ff5f2d;
+    --gray: #dddddd;
+    --gray-light: #eeeeee;
+    --black: #333333;
+}
+
+.login,
+.register {
+    margin-top: 96px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+}
+
+.login h1,
+.register h1 {
+    margin-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 18px;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .login {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+}

@@ -22,7 +22,6 @@ function CommentForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setCommentErrors(validation(commentValues));
-        alert("Komentar berhasil ditambahkan!");
         setCommentValues({
             ...commentValues,
             name: "",

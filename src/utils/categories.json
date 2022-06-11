@@ -2,31 +2,31 @@
     {
         "id": 1,
         "name": "Linux",
-        "path": "",
+        "path": "#",
         "class": "dropdown-link"
     },
     {
         "id": 2,
         "name": "Windows",
-        "path": "",
+        "path": "#",
         "class": "dropdown-link"
     },
     {
         "id": 3,
         "name": "MAC OS",
-        "path": "",
+        "path": "#",
         "class": "dropdown-link"
     },
     {
         "id": 4,
         "name": "Android",
-        "path": "",
+        "path": "#",
         "class": "dropdown-link"
     },
     {
         "id": 5,
         "name": "iOS",
-        "path": "",
+        "path": "#",
         "class": "dropdown-link"
     }
 ]

@@ -106,12 +106,12 @@ p.comment-message {
 
 .btn-reset {
     background-color: var(--gray-light);
+    margin-right: 12px;
 }
 
 .btn-submit {
     background-color: var(--brown);
     color: var(--gray-light);
-    margin-left: 4px;
 }
 
 .btn-reset:hover {
@@ -124,12 +124,6 @@ p.comment-message {
 
 .comment-replies {
     margin-top: 32px;
-}
-
-p.error {
-    color: var(--red);
-    margin-bottom: 12px;
-    font-size: 80%;
 }
 
 @media screen and (max-width: 1024px) {

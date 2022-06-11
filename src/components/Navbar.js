@@ -26,7 +26,7 @@ function Navbar() {
                     </form>
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown">
-                            <Link to="" className="nav-link">Categories</Link>
+                            <Link to="#" className="nav-link">Categories</Link>
                             <Dropdown categories={category} />
                         </li>
                         <li className="nav-item">
