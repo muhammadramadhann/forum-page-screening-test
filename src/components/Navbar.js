@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <header>
             <nav className="navbar">
-                <Link to='' className="nav-title">Forum Anak IT</Link>
+                <Link to='/' className="nav-title" onClick={closeMenu}>Forum Anak IT</Link>
                 <div className={click ? "navbar-collapse active" : "navbar-collapse"}>
                     <div className="navbar-close" onClick={handleClick}>
                         <i className="fa-solid fa-xmark"></i>
