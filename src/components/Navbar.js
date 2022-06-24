@@ -20,7 +20,7 @@ function Navbar() {
                         <i className="fa-solid fa-xmark"></i>
                     </div>
                     <form action="" className="search" role="search">
-                        <input type="search" name="search" id="search" placeholder="Search" autoComplete="off" maxLength="60" />
+                        <input type="text" name="search" id="search" placeholder="Search" autoComplete="off" maxLength="60" />
                         <i className="fa-solid fa-magnifying-glass"></i>
                     </form>
                     <ul className="navbar-nav">
